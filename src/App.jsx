@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from './component/header/Header'
+import Nav from './component/nav/Nav'
+import About from './component/about/About'
+import Experience from './component/experience/Experience'
+import Services from './component/services/Services'
+import Portfolio from './component/portfolio/Portfolio'
+import Testimonial from './component/testimonials/Testimonials'
+import Contact from './component/contact/Contact'
+import Footer from './component/footer/Footer'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+function App(){
+    return(
+        <>
+        <Header/>
+        <Nav/>
+        <About/>
+        <Experience/>
+        <Services/>
+        <Portfolio/>
+        <Testimonial/>
+        <Contact/>
+        <Footer/>
+        </>
+    )
 }
 
 export default App
